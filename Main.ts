@@ -8,9 +8,8 @@ let student3 = new Student('b21', 'nguyen ngoc kien', '12a1', 'ho chi minh', 7, 
 let student4 = new Student('b52', 'nguyen van nam', '11c9', 'ca mau', 10, 'mua sam');
 let student5 = new Student('c23', 'nguyen thi giang', '12h5', 'ho chi minh', 9, 'boi loi');
 
-export let studentManager = new StudentManager();
-export let readlineSync = require('readline-sync');
-
+let studentManager = new StudentManager();
+let readlineSync = require('readline-sync');
 
 studentManager.addStudent(student1);
 studentManager.addStudent(student2);
@@ -20,7 +19,7 @@ studentManager.addStudent(student5);
 
 console.log('Hello!');
 
-export function Main() {
+function Main() {
     let menu: string[] = ['Show list',
             'Search a student by name',
             'Add a student',
@@ -71,5 +70,3 @@ export function Main() {
 }
 
 Main();
-
-
