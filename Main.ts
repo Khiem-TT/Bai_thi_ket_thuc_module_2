@@ -1,5 +1,5 @@
-import {Student} from "./Student";
-import {StudentManager} from "./StudentManager";
+import {Student} from "./Class/Student";
+import {StudentManager} from "./Class/StudentManager";
 import {question} from "readline-sync";
 
 let student1 = new Student('a11', 'tran thi ha trang', '12d3', 'ha noi', 5, 've tranh');
